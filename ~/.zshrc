@@ -42,7 +42,6 @@ export EDITOR=nvim
 alias edit='edit_script.sh'
 
 # Add space after 'sudo'; 'sudo' as substitute for 'doas'
-alias doas='sudo '
 alias sudo='sudo '
 
 # List all files (including hidden files) with color
