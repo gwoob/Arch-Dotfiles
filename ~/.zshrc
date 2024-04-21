@@ -2,9 +2,6 @@ autoload -Uz compinit promptinit
 compinit
 promptinit
 
-# Display system information
-fastfetch --logo-type small --gpu-force-vulkan true --structure OS:Kernel:Packages:Uptime:Memory:CPU:GPU
-
 # History
 HISTFILE=$HOME/.config/zsh/.zhistory
 HISTSIZE=99999999
@@ -17,13 +14,15 @@ setopt HIST_IGNORE_ALL_DUPS      # Delete old recorded entry if new entry is a d
 setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history file.
 setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording entry.
 
-# Load Starship prompt
+fastfetch
+
+# Starship prompt
 eval "$(starship init zsh)"
 
-# Load zsh-vi-mode plugin
+# zsh-vi-mode plugin
 source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
-# Load zsh-autosuggestions plugin
+# zsh-autosuggestions plugin
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Enable a cache for completions
@@ -39,7 +38,7 @@ setopt correct
 export EDITOR=nvim
 
 # text editor script
-alias edit='edit_script.sh'
+alias edit='edit.sh'
 
 # Add space after 'sudo'; 'sudo' as substitute for 'doas'
 alias sudo='sudo '
