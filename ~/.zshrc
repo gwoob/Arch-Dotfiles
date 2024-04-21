@@ -14,6 +14,9 @@ setopt HIST_IGNORE_ALL_DUPS      # Delete old recorded entry if new entry is a d
 setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history file.
 setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording entry.
 
+# Command auto-correction
+setopt correct
+
 fastfetch
 
 # Starship prompt
@@ -27,9 +30,6 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Enable a cache for completions
 zstyle ':completion::complete:*' use-cache 1
-
-# Enable command auto-correction
-setopt correct
 
 # text editor script
 alias edit='edit.sh'
