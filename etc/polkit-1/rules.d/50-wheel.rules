@@ -1,5 +1,0 @@
-# https://wiki.gentoo.org/wiki/GNOME/Guide#Non-root_user_authentication_for_dialogs
-
-polkit.addAdminRule(function(action, subject) {
-    return ["unix-group:wheel"];
-});
