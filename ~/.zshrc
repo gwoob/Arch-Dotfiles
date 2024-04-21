@@ -24,7 +24,7 @@ eval "$(starship init zsh)"
 source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # Load zsh-autosuggestions plugin
-source /opt/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Enable a cache for completions
 zstyle ':completion::complete:*' use-cache 1
