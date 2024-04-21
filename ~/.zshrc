@@ -21,7 +21,7 @@ setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording en
 eval "$(starship init zsh)"
 
 # Load zsh-vi-mode plugin
-source /opt/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # Load zsh-autosuggestions plugin
 source /opt/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
