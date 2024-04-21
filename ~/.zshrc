@@ -1,3 +1,7 @@
+autoload -Uz compinit promptinit
+compinit
+promptinit
+
 # Display system information
 fastfetch --logo-type small --gpu-force-vulkan true --structure OS:Kernel:Packages:Uptime:Memory:CPU:GPU
 
@@ -21,10 +25,6 @@ source /opt/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # Load zsh-autosuggestions plugin
 source /opt/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-
-# Load zsh completions
-autoload -U compinit promptinit
-compinit
 
 # Enable a cache for completions
 zstyle ':completion::complete:*' use-cache 1
