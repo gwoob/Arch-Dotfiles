@@ -12,7 +12,7 @@ UUID=38536e31-a904-4994-ac0b-a584fe354d78	/.snapshots		btrfs	discard=async,space
 
 UUID=38536e31-a904-4994-ac0b-a584fe354d78	/var			btrfs	discard=async,space_cache=v2,nodatacow,subvol=@var					0 0
 
-#UUID=38536e31-a904-4994-ac0b-a584fe354d78	/mnt/games		btrfs	discard=async,space_cache=v2,compress-force=zstd:3,subvol=@games			0 0
+#UUID=38536e31-a904-4994-ac0b-a584fe354d78	/opt/games		btrfs	discard=async,space_cache=v2,compress-force=zstd:3,subvol=@games			0 0
 
 /var/swap/swapfile				none			swap	sw											0 0
 
