@@ -31,9 +31,6 @@ zstyle ':completion::complete:*' use-cache 1
 # Enable command auto-correction
 setopt correct
 
-# Add ~/Scripts to PATH if it exists
-[ -d $HOME/Scripts ] && PATH=$PATH:$HOME/Scripts
-
 # Neovim default editor
 export EDITOR=nvim
 
@@ -70,8 +67,5 @@ alias mkdir='mkdir -p'
 
 alias files='nautilus .'
 
-
-# Add emacs to path and alias Emacsclient
-[ -d $HOME/.emacs.d/bin ] && PATH=$PATH:$HOME/.emacs.d/bin
-
+# Emacsclient
 alias emacs='emacsclient -c -a 'emacs' & disown'
