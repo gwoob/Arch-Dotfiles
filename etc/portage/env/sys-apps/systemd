@@ -1,6 +1,0 @@
-# https://wiki.gentoo.org/wiki/Systemd-boot#Updating_process
-
-if [ "${EBUILD_PHASE}" == "postinst" ];
-then
-	bootctl --no-variables --graceful update
-fi

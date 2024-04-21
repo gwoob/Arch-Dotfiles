@@ -1,1 +1,0 @@
-sys-kernel/installkernel dracut systemd systemd-boot -grub -uki -ukify
