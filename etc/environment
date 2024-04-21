@@ -1,3 +1,0 @@
-# for nvidia-vaapi-driver https://github.com/elFarto/nvidia-vaapi-driver
-NVD_BACKEND=direct
-MOZ_DISABLE_RDD_SANDBOX=1
