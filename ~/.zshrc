@@ -69,3 +69,6 @@ alias files='nautilus .'
 
 # Emacsclient
 alias emacs='emacsclient -c -a 'emacs' & disown'
+
+# Start GNOME Wayland
+alias startw='XDG_SESSION_TYPE=wayland dbus-run-session gnome-session'
