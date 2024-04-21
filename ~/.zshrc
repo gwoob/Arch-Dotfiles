@@ -31,9 +31,6 @@ zstyle ':completion::complete:*' use-cache 1
 # Enable command auto-correction
 setopt correct
 
-# Neovim default editor
-export EDITOR=nvim
-
 # text editor script
 alias edit='edit.sh'
 
