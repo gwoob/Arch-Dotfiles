@@ -15,8 +15,3 @@ UUID=38536e31-a904-4994-ac0b-a584fe354d78	/var			btrfs	discard=async,space_cache
 #UUID=38536e31-a904-4994-ac0b-a584fe354d78	/opt/games		btrfs	discard=async,space_cache=v2,compress-force=zstd:3,subvol=@games			0 0
 
 /var/swap/swapfile				none			swap	sw											0 0
-
-# Portage TMPDIR on tmpfs
-tmpfs						/var/tmp		tmpfs rw,nosuid,noatime,nodev,size=20G,mode=1777						0 0
-
-tmpfs						/var/tmp/portage	tmpfs rw,nosuid,noatime,nodev,size=20G,mode=775,uid=portage,gid=portage,x-mount.mkdir=775	0 0
