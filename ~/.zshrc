@@ -53,8 +53,8 @@ alias mv='mv -i'
 alias rm='rm -i'
 
 # Aliases for clipboard copy and paste using 'xclip'
-alias pbcopy='wl-copy'
-alias pbpaste='wl-paste'
+alias pbcopy='wcopy'
+alias pbpaste='wpaste'
 
 # Enable color highlighting for grep
 alias grep='grep --color=auto'
