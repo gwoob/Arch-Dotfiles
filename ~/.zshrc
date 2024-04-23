@@ -31,6 +31,9 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Enable a cache for completions
 zstyle ':completion::complete:*' use-cache 1
 
+# Complete case sensitive
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
+
 # text editor script
 alias edit='edit.sh'
 
