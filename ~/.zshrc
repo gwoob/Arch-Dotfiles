@@ -37,9 +37,6 @@ alias edit='edit.sh'
 # Add space after 'sudo'; 'sudo' as substitute for 'doas'
 alias sudo='sudo '
 
-# List all files (including hidden files) with color
-# alias ls='ls -A --color=auto'
-
 # better 'ls' command
 alias ls='eza -a --icons'
 
