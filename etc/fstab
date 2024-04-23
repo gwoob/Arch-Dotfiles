@@ -1,15 +1,15 @@
 # /dev/nvme0n1p1 (2GiB)
-UUID=DEB8-150E					/efi			vfat	x-systemd.automount,defaults										0 1
+UUID=					/efi			vfat	x-systemd.automount,defaults										0 1
 
-# /dev/nvme0n1p2 (1.8TiB)
+# /dev/nvme0n1p2
 UUID=	/			btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@				0 0
 
 UUID=	/.snapshots		btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@.snapshots			0 0
 
-#UUID=	/home			btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@home				0 0
+UUID=	/home			btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@home				0 0
 
 UUID=	/var			btrfs	ssd,noatime,discard=async,space_cache=v2,nodatacow,subvol=@var					0 0
 
-#UUID=	/opt/games		btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@games			0 0
+UUID=	/mnt/games		btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@games			0 0
 
 /swap/swapfile				none			swap	sw											0 0
