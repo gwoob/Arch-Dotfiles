@@ -17,7 +17,7 @@ setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording en
 # Command auto-correction
 setopt correct
 
-fastfetch
+fastfetch -s title:separator:os:kernel:uptime:packages:shell:display:de:wm:cpu:gpu:memory:disk:vulkan:opencl:sound
 
 # Starship prompt
 eval "$(starship init zsh)"
