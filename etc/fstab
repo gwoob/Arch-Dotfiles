@@ -2,16 +2,14 @@
 UUID=DEB8-150E					/efi			vfat	x-systemd.automount,defaults										0 1
 
 # /dev/nvme0n1p2 (1.8TiB)
-UUID=38536e31-a904-4994-ac0b-a584fe354d78	/			btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@				0 0
+UUID=	/			btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@				0 0
 
-UUID=38536e31-a904-4994-ac0b-a584fe354d78	/.snapshots		btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@.snapshots			0 0
+UUID=	/.snapshots		btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@.snapshots			0 0
 
-#UUID=38536e31-a904-4994-ac0b-a584fe354d78	/home			btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@home				0 0
+#UUID=	/home			btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@home				0 0
 
-#UUID=38536e31-a904-4994-ac0b-a584fe354d78	/home/.snapshots	btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@home.snapshots		0 0
+UUID=	/var			btrfs	ssd,noatime,discard=async,space_cache=v2,nodatacow,subvol=@var					0 0
 
-UUID=38536e31-a904-4994-ac0b-a584fe354d78	/var			btrfs	ssd,noatime,discard=async,space_cache=v2,nodatacow,subvol=@var					0 0
+#UUID=	/opt/games		btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@games			0 0
 
-#UUID=38536e31-a904-4994-ac0b-a584fe354d78	/opt/games		btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@games			0 0
-
-/var/swap/swapfile				none			swap	sw											0 0
+/swap/swapfile				none			swap	sw											0 0
