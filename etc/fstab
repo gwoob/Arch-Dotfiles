@@ -8,8 +8,12 @@ UUID=	/.snapshots		btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force
 
 UUID=	/home			btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@home				0 0
 
+UUID=	/root			btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@root				0 0
+
 UUID=	/var			btrfs	ssd,noatime,discard=async,space_cache=v2,nodatacow,subvol=@var					0 0
 
-UUID=	/mnt/games		btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@games			0 0
+UUID=	/swap			btrfs	ssd,noatime,discard=async,space_cache=v2,nodatacow,subvol=@swap
 
 /swap/swapfile				none			swap	sw											0 0
+
+UUID=	/mnt/games		btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@games			0 0
