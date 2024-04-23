@@ -34,6 +34,10 @@ zstyle ':completion::complete:*' use-cache 1
 # text editor script
 alias edit='edit.sh'
 
+alias vim='nvim'
+alias vi='nvim'
+alias nano='nvim'
+
 # Add space after 'sudo'; 'sudo' as substitute for 'doas'
 alias sudo='sudo '
 
