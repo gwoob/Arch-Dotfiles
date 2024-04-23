@@ -38,7 +38,7 @@ alias edit='edit.sh'
 alias sudo='sudo '
 
 # better 'ls' command
-alias ls='eza -a --icons'
+alias ls='eza -a -l --group-directories-first --icons=auto'
 
 # Always prompt for confirmation when copying files
 alias cp='cp -i'
@@ -51,7 +51,7 @@ alias rm='rm -i'
 
 # Aliases for clipboard copy and paste using 'xclip'
 alias wcopy='wl-copy'
-alias wpaste='wl-paste'
+alias wpast='wl-paste'
 
 # Enable color highlighting for grep
 alias grep='grep --color=auto'
