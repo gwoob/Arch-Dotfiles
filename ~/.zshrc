@@ -37,6 +37,9 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
 # text editor script
 alias edit='edit.sh'
 
+alias unpack='aunpack -x'
+alias unpackto='aunpack -X'
+
 alias vim='nvim'
 alias vi='nvim'
 alias nano='nvim'
