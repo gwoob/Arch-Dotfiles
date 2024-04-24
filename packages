@@ -27,6 +27,9 @@ opensnitch
 steam
 
 # Audio
+sof-firmware
+alsa-utils
+alsa-plugins
 pipewire
 calf
 lsp-plugins-lv2
