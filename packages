@@ -8,6 +8,8 @@ sudo
 networkmanager
 
 # Essentials
+ffmpeg
+mpv
 neovim
 zsh
 atool
@@ -24,6 +26,8 @@ libva-mesa-driver
 lib32-libva-mesa-driver
 mesa-vdpau
 lib32-mesa-vdpau
+
+gimp
 
 opensnitch
 
