@@ -25,5 +25,16 @@ opensnitch
 
 steam
 
+# Audio
+pipewire
+calf
+lsp-plugins-lv2
+mda.lv2
+zam-plugins-lv2
+
+wireplumber
+easyeffects
+qpwgraph
+
 # AUR
 waydroid
