@@ -20,6 +20,8 @@ zsh
 atool
 eza
 
+signal-desktop
+
 noto-fonts
 
 # Graphics
@@ -60,6 +62,7 @@ proton-ge-custom-bin
 
 # Flatpak (Flathub)
 com.github.tchx84.Flatseal
+io.github.giantpinkrobots.flatsweep
 org.gtk.Gtk3theme.adw-gtk3
 org.gtk.Gtk3theme.adw-gtk3-dark
 com.mattjakeman.ExtensionManager
