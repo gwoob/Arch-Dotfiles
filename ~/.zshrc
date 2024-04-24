@@ -56,7 +56,7 @@ alias mv='mv -i'
 # Always prompt for confirmation when deleting files
 alias rm='rm -i'
 
-# wl-copy
+# wl-clipboard
 alias cop='wl-copy'
 alias pst='wl-paste'
 
