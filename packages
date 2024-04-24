@@ -22,6 +22,7 @@ neovim
 zsh
 atool
 eza
+emacs-wayland
 
 signal-desktop
 
@@ -42,8 +43,6 @@ gimp
 opensnitch
 
 steam
-
-emacs-wayland
 
 # Audio
 sof-firmware
