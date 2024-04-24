@@ -56,10 +56,12 @@ alias mv='mv -i'
 # Always prompt for confirmation when deleting files
 alias rm='rm -i'
 
-# Aliases for clipboard copy and paste using 'xclip'
-alias wcopy='wl-copy'
-alias wpast='wl-paste'
-alias wpaste='wl-paste'
+# wl-copy
+alias cop='wl-copy'
+alias pst='wl-paste'
+
+# Copy contents of a file
+alias cpc='wl-copy <'
 
 # Enable color highlighting for grep
 alias grep='grep --color=auto'
