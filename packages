@@ -12,6 +12,7 @@ btrfs-progs
 gnome
 gnome-tweaks
 dconf-editor
+alacarte
 
 # Essentials
 ffmpeg
