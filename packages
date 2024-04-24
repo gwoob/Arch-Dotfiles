@@ -74,3 +74,4 @@ org.gtk.Gtk3theme.adw-gtk3-dark
 com.mattjakeman.ExtensionManager
 com.belmoussaoui.Authenticator
 io.github.ungoogled_software.ungoogled_chromium
+io.github.mrvladus.List
