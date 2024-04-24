@@ -1,0 +1,2 @@
+# For games using OpenAL, if you use headphones you may get much better positional audio using OpenAL's HRTF filters. To enable, create:
+hrtf = true
