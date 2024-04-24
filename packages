@@ -11,6 +11,9 @@ networkmanager
 neovim
 zsh
 atool
+eza
+
+noto-fonts
 
 # Graphics
 mesa
