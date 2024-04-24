@@ -72,3 +72,4 @@ io.github.giantpinkrobots.flatsweep
 org.gtk.Gtk3theme.adw-gtk3
 org.gtk.Gtk3theme.adw-gtk3-dark
 com.mattjakeman.ExtensionManager
+com.belmoussaoui.Authenticator
