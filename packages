@@ -42,6 +42,8 @@ opensnitch
 
 steam
 
+emacs-wayland
+
 # Audio
 sof-firmware
 alsa-utils
