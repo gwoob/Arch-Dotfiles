@@ -10,6 +10,7 @@ networkmanager
 # Essentials
 neovim
 zsh
+atool
 
 # Graphics
 mesa
@@ -37,4 +38,6 @@ easyeffects
 qpwgraph
 
 # AUR
+aurutils
+librewolf-bin
 waydroid
