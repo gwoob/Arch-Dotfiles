@@ -7,6 +7,11 @@ base-devel
 sudo
 networkmanager
 
+# Desktop
+gnome
+gnome-tweaks
+dconf editor
+
 # Essentials
 ffmpeg
 mpv
@@ -51,3 +56,6 @@ qpwgraph
 aurutils
 librewolf-bin
 waydroid
+
+# Flatpak (Flathub)
+com.mattjakeman.ExtensionManager
