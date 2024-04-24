@@ -41,7 +41,7 @@ alias vim='nvim'
 alias vi='nvim'
 alias nano='nvim'
 
-# Add space after 'sudo'; 'sudo' as substitute for 'doas'
+# Add space after 'sudo'
 alias sudo='sudo '
 
 # better 'ls' command
