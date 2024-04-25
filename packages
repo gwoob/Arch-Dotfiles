@@ -7,6 +7,7 @@ base-devel
 sudo
 networkmanager
 btrfs-progs
+dash
 flatpak
 
 # Desktop
@@ -60,8 +61,9 @@ easyeffects
 qpwgraph
 
 # AUR
-gdm-settings
 aurutils
+dashbinsh
+gdm-settings
 librewolf-bin
 adw-gtk3-git
 waydroid
