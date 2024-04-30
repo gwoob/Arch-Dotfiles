@@ -11,9 +11,7 @@ dash
 flatpak
 
 # Desktop
-gnome
-gnome-tweaks
-dconf-editor
+hyprland
 
 # Essentials
 ffmpeg
