@@ -28,6 +28,8 @@ handbrake
 
 signal-desktop
 
+usbgaurd
+ 
 noto-fonts
 
 # Graphics
@@ -68,6 +70,7 @@ waydroid
 proton-ge-custom-bin
 hakuneko-desktop-nightly
 kcc
+mullvad-vpn-bin
 
 # Flatpak (Flathub)
 com.github.tchx84.Flatseal
