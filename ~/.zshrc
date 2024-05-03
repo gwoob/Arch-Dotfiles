@@ -1,3 +1,7 @@
+source .profile
+
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
+
 autoload -Uz compinit promptinit
 compinit
 promptinit
@@ -17,34 +21,29 @@ setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording en
 # Command auto-correction
 setopt correct
 
-fastfetch -s title:separator:os:kernel:uptime:packages:shell:display:de:wm:cpu:gpu:memory:disk:vulkan:opencl:sound
+fastfetch --logo-type small -s title:os:kernelcpu:gpu:memory:disk
 
-# Starship prompt
-eval "$(starship init zsh)"
+PROMPT='%~'$'\n''> '
+
+precmd() {
+    precmd() {
+        echo
+    }
+}
 
 # zsh-vi-mode plugin
-source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+source /opt/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # zsh-autosuggestions plugin
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 
 # Enable a cache for completions
 zstyle ':completion::complete:*' use-cache 1
 
-# Complete case sensitive
-zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
-
 # text editor script
 alias edit='edit.sh'
 
-alias unz='aunpack -x'
-alias unzto='aunpack -X'
-
-alias vim='nvim'
-alias vi='nvim'
-alias nano='nvim'
-
-# Add space after 'sudo'
+# Add space after 'sudo'; 'sudo' as substitute for 'doas'
 alias sudo='sudo '
 
 # better 'ls' command
@@ -59,12 +58,9 @@ alias mv='mv -i'
 # Always prompt for confirmation when deleting files
 alias rm='rm -i'
 
-# wl-clipboard
-alias cop='wl-copy'
-alias pst='wl-paste'
-
-# Copy contents of a file
-alias cpc='wl-copy <'
+# Aliases for clipboard copy and paste using 'xclip'
+alias wcopy='wl-copy'
+alias wpast='wl-paste'
 
 # Enable color highlighting for grep
 alias grep='grep --color=auto'
@@ -79,6 +75,10 @@ alias emacs='emacsclient -c -a 'emacs' & disown'
 
 # Start GNOME Wayland
 alias startw='XDG_SESSION_TYPE=wayland dbus-run-session gnome-session'
+
+if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+    export MOZ_ENABLE_WAYLAND=1
+fi
 
 export EDITOR=nvim
 
