@@ -71,6 +71,7 @@ proton-ge-custom-bin
 hakuneko-desktop-nightly
 kcc
 mullvad-vpn-bin
+cryptomator-bin
 
 # Flatpak (Flathub)
 com.github.tchx84.Flatseal
