@@ -73,6 +73,7 @@ hakuneko-desktop-nightly
 kcc
 mullvad-vpn-bin
 filen-desktop-appimage
+anki-bin
 
 # Flatpak (Flathub)
 com.github.tchx84.Flatseal
