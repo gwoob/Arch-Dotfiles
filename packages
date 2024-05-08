@@ -82,7 +82,7 @@ io.github.giantpinkrobots.flatsweep
 org.gtk.Gtk3theme.adw-gtk3
 org.gtk.Gtk3theme.adw-gtk3-dark
 com.belmoussaoui.Authenticator
-io.github.ungoogled_software.ungoogled_chromium
+com.brave.Browser
 io.github.mrvladus.List
 com.stremio.Stremio
 com.github.Matoking.protontricks
