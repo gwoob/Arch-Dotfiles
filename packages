@@ -22,7 +22,6 @@ ffmpeg
 mpv
 neovim
 zsh
-atool
 eza
 emacs-wayland
 
@@ -75,6 +74,7 @@ kcc
 mullvad-vpn-bin
 filen-desktop-appimage
 anki-bin
+patool
 
 # Flatpak (Flathub)
 com.github.tchx84.Flatseal
