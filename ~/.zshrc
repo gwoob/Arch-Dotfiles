@@ -70,6 +70,8 @@ alias mkdir='mkdir -p'
 
 alias files='nautilus .'
 
+unz='patool extract'
+
 # Emacsclient
 alias emacs='emacsclient -c -a 'emacs' & disown'
 
