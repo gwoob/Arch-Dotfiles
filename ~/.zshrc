@@ -72,6 +72,9 @@ alias files='nautilus .'
 
 unz='patool extract'
 
+startx='Hyprland'
+startw='Hyprland'
+
 # Emacsclient
 alias emacs='emacsclient -c -a 'emacs' & disown'
 
