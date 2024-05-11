@@ -75,9 +75,6 @@ unz='patool extract'
 # Emacsclient
 alias emacs='emacsclient -c -a 'emacs' & disown'
 
-# Start GNOME Wayland
-alias startw='XDG_SESSION_TYPE=wayland dbus-run-session gnome-session'
-
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
     export MOZ_ENABLE_WAYLAND=1
 fi
