@@ -1,0 +1,10 @@
+network:
+universal: false
+modules: -*,
+compression:
+mount_timeout:
+strip: false
+extra_files: busybox,fsck,fsck.btrfs
+vconsole: true
+enable_lvm: false
+enable_mdraid: true
