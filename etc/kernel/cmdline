@@ -4,9 +4,5 @@ rootfs=btrfs
 nowatchdog
 modprobe.blacklist=iTCO_wdt
 modprobe.blacklist=sp5100_tco
-nvidia_drm.modeset=1
 rw
-iommu=pt
-pcie_acs_override=downstream,multifunction
-vfio-pci.ids=10de:1c82,10de:0fb9
 amd_pstate=active
