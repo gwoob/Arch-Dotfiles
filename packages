@@ -12,6 +12,7 @@ tlp
 amd-ucode
 iwd
 systemd-resolvconf
+snapper
 
 # Desktop
 hyprland
