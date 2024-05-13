@@ -76,6 +76,7 @@ mullvad-vpn-bin
 filen-desktop-appimage
 anki-bin
 patool
+xdg-ninja
 
 # Flatpak (Flathub)
 com.github.tchx84.Flatseal
