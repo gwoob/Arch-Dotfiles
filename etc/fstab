@@ -8,7 +8,7 @@ LABEL=archlinux	/root			btrfs	ssd,noatime,discard=async,space_cache=v2,compress-
 
 LABEL=archlinux	/var			btrfs	ssd,noatime,discard=async,space_cache=v2,nodatacow,subvol=@var					0 0
 
-LABEL=archlinux	/swap			btrfs	ssd,noatime,discard=async,space_cache=v2,nodatacow,subvol=@swap
+LABEL=archlinux	/swap			btrfs	ssd,noatime,discard=async,space_cache=v2,nodatacow,subvol=@swap          0 0
 
 /swap/swapfile				none			swap	sw											0 0
 
