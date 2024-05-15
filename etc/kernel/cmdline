@@ -4,6 +4,5 @@ rootfs=btrfs
 nowatchdog
 modprobe.blacklist=iTCO_wdt
 modprobe.blacklist=sp5100_tco
-rw
 amd_pstate=active
 panic=0
