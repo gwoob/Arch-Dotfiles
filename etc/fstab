@@ -1,15 +1,15 @@
-LABEL=archlinux	/			btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@				0 0
+/dev/mapper/cryptroot	/			btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@				0 0
 
-LABEL=archlinux	/.snapshots		btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@.snapshots			0 0
+/dev/mapper/cryptroot	/.snapshots		btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@.snapshots			0 0
 
-LABEL=archlinux	/home			btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@home				0 0
+/dev/mapper/cryptroot	/home			btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@home				0 0
 
-LABEL=archlinux	/root			btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@root				0 0
+/dev/mapper/cryptroot	/root			btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@root				0 0
 
-LABEL=archlinux	/var			btrfs	ssd,noatime,discard=async,space_cache=v2,nodatacow,subvol=@var					0 0
+/dev/mapper/cryptroot	/var			btrfs	ssd,noatime,discard=async,space_cache=v2,nodatacow,subvol=@var					0 0
 
-LABEL=archlinux	/swap			btrfs	ssd,noatime,discard=async,space_cache=v2,nodatacow,subvol=@swap          0 0
+/dev/mapper/cryptroot	/swap			btrfs	ssd,noatime,discard=async,space_cache=v2,nodatacow,subvol=@swap          0 0
 
 /swap/swapfile				none			swap	sw											0 0
 
-LABEL=archlinux	/mnt/games		btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@games			0 0
+/dev/mapper/cryptroot	/mnt/games		btrfs	ssd,noatime,discard=async,space_cache=v2,compress-force=zstd:3,subvol=@games			0 0
