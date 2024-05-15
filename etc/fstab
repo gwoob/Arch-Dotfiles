@@ -1,5 +1,5 @@
 /dev/mapper/cryptroot / btrfs noatime,discard=async,space_cache=v2,compress-force=zstd,subvol=@ 0 0
-/dev/mapper/cryptroot /.snapshots btrfs noatime,discard=async,space_cache=v2,compress-force=zstd,subvol=@.snapshots 0 0
+/dev/mapper/cryptroot /.snapshots btrfs noatime,discard=async,space_cache=v2,compress-force=zstd,subvol=@snapshots 0 0
 /dev/mapper/cryptroot /home btrfs noatime,discard=async,space_cache=v2,compress-force=zstd,subvol=@home 0 0
 /dev/mapper/cryptroot /root btrfs noatime,discard=async,space_cache=v2,compress-force=zstd,subvol=@root 0 0
 /dev/mapper/cryptroot /var btrfs noatime,discard=async,space_cache=v2,nodatacow,subvol=@var 0 0
