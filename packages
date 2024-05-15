@@ -13,6 +13,7 @@ amd-ucode
 iwd
 systemd-resolvconf
 snapper
+snap-pac
 
 # Desktop
 hyprland
