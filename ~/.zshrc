@@ -83,6 +83,7 @@ if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
 fi
 
 export EDITOR=nvim
+export SUDO_EDITOR=nvim
 
 [ -d $HOME/Scripts ] && PATH=$PATH:$HOME/Scripts
 
