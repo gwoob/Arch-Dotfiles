@@ -1,8 +1,7 @@
-root=PARTUUID=
-rootflags=subvol=
-rootfs=btrfs
+rootflags=subvol=@
 nowatchdog
 modprobe.blacklist=iTCO_wdt
 modprobe.blacklist=sp5100_tco
 amd_pstate=active
 panic=0
+module.sig_enforce=1
