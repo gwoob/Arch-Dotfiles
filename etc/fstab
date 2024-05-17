@@ -5,4 +5,3 @@
 /dev/mapper/cryptroot /var btrfs noatime,discard=async,space_cache=v2,nodatacow,subvol=@var 0 0
 /dev/mapper/cryptroot /games btrfs noatime,discard=async,space_cache=v2,compress-force=zstd,subvol=@games 0 0
 /var/.swapfile none sw 0 0
-/boot /boot none noexec,nosuid,nodev 0 0
