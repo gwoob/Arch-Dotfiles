@@ -15,6 +15,7 @@ systemd-resolvconf
 snapper
 snap-pac
 chrony
+reflector
 
 # Desktop
 hyprland
