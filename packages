@@ -8,7 +8,7 @@ sudo
 btrfs-progs
 dash
 flatpak
-tlp
+tlp-rdw
 amd-ucode
 iwd
 systemd-resolvconf
