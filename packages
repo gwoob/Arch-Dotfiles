@@ -10,7 +10,7 @@ dash
 flatpak
 tlp-rdw
 amd-ucode
-iwd
+networkmanager
 systemd-resolvconf
 snapper
 snap-pac
