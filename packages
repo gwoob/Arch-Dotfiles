@@ -16,6 +16,7 @@ snapper
 snap-pac
 chrony
 reflector
+pacman-contrib
 
 # Desktop
 hyprland
