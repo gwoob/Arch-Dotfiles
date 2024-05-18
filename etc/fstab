@@ -1,15 +1,15 @@
-LABEL=linuxroot   /btrfsroot    btrfs   noatime,discard=async,space_cache=v2,compress-force=zstd,subvolid=5 0 0
+LABEL=root   /btrfsroot    btrfs   noatime,discard=async,space_cache=v2,compress-force=zstd,subvolid=5 0 0
 
-LABEL=linuxroot   /             btrfs   noatime,discard=async,space_cache=v2,compress-force=zstd,subvol=@ 0 0
+LABEL=root   /             btrfs   noatime,discard=async,space_cache=v2,compress-force=zstd,subvol=@ 0 0
 
-LABEL=linuxroot   /.snapshots   btrfs   noatime,discard=async,space_cache=v2,compress-force=zstd,subvol=@snapshots 0 0
+LABEL=root   /.snapshots   btrfs   noatime,discard=async,space_cache=v2,compress-force=zstd,subvol=@snapshots 0 0
 
-LABEL=linuxroot   /home         btrfs   noatime,discard=async,space_cache=v2,compress-force=zstd,subvol=@home 0 0
+LABEL=root   /home         btrfs   noatime,discard=async,space_cache=v2,compress-force=zstd,subvol=@home 0 0
 
-LABEL=linuxroot   /root         btrfs   noatime,discard=async,space_cache=v2,compress-force=zstd,subvol=@root 0 0
+LABEL=root   /root         btrfs   noatime,discard=async,space_cache=v2,compress-force=zstd,subvol=@root 0 0
 
-LABEL=linuxroot   /var          btrfs   noatime,discard=async,space_cache=v2,nodatacow,subvol=@var 0 0
+LABEL=root   /var          btrfs   noatime,discard=async,space_cache=v2,nodatacow,subvol=@var 0 0
 
-LABEL=linuxroot   /games        btrfs   noatime,discard=async,space_cache=v2,compress-force=zstd,subvol=@games 0 0
+LABEL=root   /games        btrfs   noatime,discard=async,space_cache=v2,compress-force=zstd,subvol=@games 0 0
 
 /var/.swapfile    none          swap    sw 0 0
