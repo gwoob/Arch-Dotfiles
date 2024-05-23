@@ -14,5 +14,5 @@ items = [
   "systemd-resolvconf",
   "snapper",
   "chrony",
-  "nvim",
+  "neovim",
 ]
