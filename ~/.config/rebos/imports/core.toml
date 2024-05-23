@@ -16,4 +16,5 @@ items = [
   "snapper",
   "chrony",
   "neovim",
+  "zsh",
 ]
