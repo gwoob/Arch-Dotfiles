@@ -27,13 +27,6 @@ patool
 xdg-ninja
 
 # Flatpak (Flathub)
-com.github.tchx84.Flatseal
-org.gtk.Gtk3theme.adw-gtk3
-org.gtk.Gtk3theme.adw-gtk3-dark
-com.belmoussaoui.Authenticator
-com.brave.Browser
-io.github.mrvladus.List
-com.stremio.Stremio
 com.github.Matoking.protontricks
 com.quexten.Goldwarden
 io.freetubeapp.FreeTube
