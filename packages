@@ -74,6 +74,8 @@ gst-plugin-pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+rtkit
+realtime-privileges # add user to "realtime" group
 
 # AUR
 paru
