@@ -1,81 +1,33 @@
-tlp-rdw
-
-# Desktop
-hyprland
-foot
-
 # Essentials
-rebos
-ffmpeg
+
 mpv
-zsh
 eza
-emacs-wayland
 
 rclone
-
-handbrake
-
-signal-desktop
 
 usbgaurd
  
 noto-fonts
 
-# Graphics
-mesa
-lib32-mesa
-vulkan-radeon
-lib32-vulkan-radeon
-libva-mesa-driver
-lib32-libva-mesa-driver
-mesa-vdpau
-lib32-mesa-vdpau
-
-gimp
-
 opensnitch
 
 steam
-
-# Audio
-sof-firmware
-alsa-utils
-alsa-plugins
-pipewire
-calf
-lsp-plugins-lv2
-mda.lv2
-zam-plugins-lv2
-wireplumber
-easyeffects
-qpwgraph
-
-gst-plugin-pipewire
-pipewire-alsa
-pipewire-jack
-pipewire-pulse
-rtkit
-realtime-privileges # add user to "realtime" group
 
 # AUR
 paru
 dashbinsh
 snapper-rollback
-librewolf-bin
+
 adw-gtk3-git
 waydroid
 proton-ge-custom-bin
 hakuneko-desktop-nightly
 kcc
-mullvad-vpn-bin
-anki-bin
 patool
 xdg-ninja
 
 # Flatpak (Flathub)
 com.github.tchx84.Flatseal
-io.github.giantpinkrobots.flatsweep
 org.gtk.Gtk3theme.adw-gtk3
 org.gtk.Gtk3theme.adw-gtk3-dark
 com.belmoussaoui.Authenticator
