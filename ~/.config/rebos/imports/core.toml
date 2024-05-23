@@ -1,5 +1,6 @@
 [managers.system]
 items = [
+  "rebos"
   "linux-zen",
   "linux-zen-headers",
   "linux-firmware",
