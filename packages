@@ -1,20 +1,6 @@
-# System
-linux-zen
-linux-zen-headers
-linux firmware
-base
-base-devel
-sudo
-btrfs-progs
-dash
-flatpak
+
 tlp-rdw
-amd-ucode
-networkmanager
-systemd-resolvconf
-snapper
 snap-pac
-chrony
 reflector
 pacman-contrib
 
@@ -26,7 +12,6 @@ foot
 rebos
 ffmpeg
 mpv
-neovim
 zsh
 eza
 emacs-wayland
