@@ -5,3 +5,14 @@ items = [
   "snap-pac",
   "snapper-rollback",
 ]
+
+[managers.serv-startup]
+items = [
+  "btrfs-scrub@btrfsroot.timer",
+  "btrfs-scrub@-.timer",
+  "btrfs-scrub@\x2esnapshots.timer",
+  "btrfs-scrub@home.timer",
+  "btrfs-scrub@root.timer",
+  "btrfs-scrub@var.timer",
+  "btrfs-scrub@games.timer",
+]
