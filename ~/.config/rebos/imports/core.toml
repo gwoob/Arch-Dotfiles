@@ -1,1 +1,18 @@
-
+[managers.system]
+items = [
+  "linux-zen",
+  "linux-zen-headers",
+  "linux-firmware",
+  "base",
+  "base-devel",
+  "sudo",
+  "btrfs-progs",
+  "dash",
+  "flatpak",
+  "amd-ucode",
+  "networkmanager",
+  "systemd-resolvconf",
+  "snapper",
+  "chrony",
+  "nvim",
+]
