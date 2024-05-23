@@ -1,0 +1,6 @@
+[managers.system]
+items = [
+  "pacman-contrib",
+  "reflector",
+  "snap-pac",
+]
