@@ -8,6 +8,7 @@ items = [
   "base-devel",
   "sudo",
   "btrfs-progs",
+  "e2fsprogs",
   "dash",
   "flatpak",
   "amd-ucode",
