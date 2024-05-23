@@ -11,8 +11,6 @@ noto-fonts
 
 opensnitch
 
-steam
-
 # AUR
 paru
 dashbinsh
@@ -20,17 +18,14 @@ snapper-rollback
 
 adw-gtk3-git
 waydroid
-proton-ge-custom-bin
 hakuneko-desktop-nightly
 kcc
 patool
 xdg-ninja
 
 # Flatpak (Flathub)
-com.github.Matoking.protontricks
 com.quexten.Goldwarden
 io.freetubeapp.FreeTube
-dev.geopjr.Collision
 page.codeberg.libre_menu_editor.LibreMenuEditor
 io.gitlab.idevecore.Pomodoro
 dev.vencord.Vesktop
