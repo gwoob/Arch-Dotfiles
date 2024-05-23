@@ -1,5 +1,7 @@
 [managers.system]
 items = [
+  "mpv",
+  "eza",
   "emacs-wayland",
   "gimp",
   "signal-desktop",
