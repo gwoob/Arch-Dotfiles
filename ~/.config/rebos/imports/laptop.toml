@@ -1,4 +1,5 @@
 [managers.system]
 items = [
   "tlp-rdw",
+  "sof-firmware",
 ]
