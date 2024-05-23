@@ -7,3 +7,9 @@ items = [
   "librewolf-bin",
   "anki-bin",
 ]
+
+[managers.flatpak]
+items = [
+  "com.belmoussaoui.Authenticator",
+  "com.stremio.Stremio",
+]
