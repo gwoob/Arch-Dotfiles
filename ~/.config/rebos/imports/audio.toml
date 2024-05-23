@@ -1,0 +1,13 @@
+[managers.system]
+items = [
+  "pipewire",
+  "gst-plugin-pipewire",
+  "pipewire-alsa",
+  "pipewire-jack",
+  "pipewire-pulse",
+  "wireplumber",
+  "easyeffects",
+  "lsp-plugins-lv2",
+  "qpwgraph",
+  "alsa-utils",
+]
