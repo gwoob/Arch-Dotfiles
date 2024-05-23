@@ -1,6 +1,8 @@
 [managers.system]
 items = [
   "pipewire",
+  "rtkit",
+  "realtime-privileges",
   "gst-plugin-pipewire",
   "pipewire-alsa",
   "pipewire-jack",
