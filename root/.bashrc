@@ -1,1 +1,1 @@
-alias edit=nvim
+alias edit='nvim'
