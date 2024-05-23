@@ -1,0 +1,10 @@
+[managers.system]
+items = [
+  "steam",
+]
+
+[managers.flatpak]
+items = [
+  "com.github.Matoking.protontricks",
+  "net.davidotek.pupgui2",
+]
