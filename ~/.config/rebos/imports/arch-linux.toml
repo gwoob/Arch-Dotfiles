@@ -2,5 +2,4 @@
 items = [
   "pacman-contrib",
   "reflector",
-  "snap-pac",
 ]
