@@ -17,6 +17,9 @@ items = [
   "chrony",
   "neovim",
   "zsh",
+  # AUR
+  "paru",
+  "dashbinsh",
 ]
 
 [managers.flatpak]
