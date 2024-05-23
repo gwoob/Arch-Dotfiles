@@ -1,0 +1,9 @@
+[managers.system]
+items = [
+  "emacs-wayland",
+  "gimp",
+  "signal-desktop",
+  # AUR
+  "librewolf-bin",
+  "anki-bin",
+]
