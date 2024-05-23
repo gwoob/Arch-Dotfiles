@@ -1,0 +1,9 @@
+[managers.system]
+items = [
+  "hyprland",
+  "hyprcursor",
+  "hypridle",
+  "hyprlock",
+  "hyprwayland-scanner",
+  "xdg-desktop-portal-hyprland",
+]
