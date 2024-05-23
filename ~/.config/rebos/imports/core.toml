@@ -18,3 +18,8 @@ items = [
   "neovim",
   "zsh",
 ]
+
+[managers.flatpak]
+items = [
+  "com.github.tchx84.Flatseal",
+]
