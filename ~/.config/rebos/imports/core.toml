@@ -15,7 +15,6 @@ items = [
   "networkmanager",
   "systemd-resolvconf",
   "snapper",
-  "chrony",
   "neovim",
   "zsh",
   # AUR
