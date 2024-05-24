@@ -26,3 +26,8 @@ items = [
 items = [
   "com.github.tchx84.Flatseal",
 ]
+
+[managers.serv-now]
+items = [
+  "NetworkManager.service",
+]
