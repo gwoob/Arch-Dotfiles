@@ -5,7 +5,8 @@ items = [
   "sof-firmware",
 ]
 
-[managers.serv-startup]
+[managers.serv-now]
 items = [
   "chronyd.service",
+  "tlp.service",
 ]
