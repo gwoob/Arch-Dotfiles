@@ -1,12 +1,13 @@
 [managers.system]
 items = [
-  "tlp-rdw",
   "chrony",
+  "tlp-rdw",
   "sof-firmware",
 ]
 
 [managers.serv-now]
 items = [
-  "chronyd.service",
   "tlp.service",
+  "NetworkManager-dispatcher.service",
+  "chronyd.service",
 ]
