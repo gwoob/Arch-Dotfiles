@@ -1,0 +1,4 @@
+[managers.serv-now]
+items = [
+  "systemd-timesyncd.service",
+]
