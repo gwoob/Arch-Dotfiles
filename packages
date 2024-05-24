@@ -1,26 +1,6 @@
-# Essentials
-
 rclone
 
 usbgaurd
- 
-noto-fonts
-
-opensnitch
 
 
-
-adw-gtk3-git
 waydroid
-hakuneko-desktop-nightly
-kcc
-patool
-xdg-ninja
-
-# Flatpak (Flathub)
-com.quexten.Goldwarden
-io.freetubeapp.FreeTube
-page.codeberg.libre_menu_editor.LibreMenuEditor
-io.gitlab.idevecore.Pomodoro
-dev.vencord.Vesktop
-com.github.GradienceTeam.Gradience
