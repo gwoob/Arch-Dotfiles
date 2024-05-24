@@ -1,7 +1,7 @@
 [managers.system]
 items = [
-  "chrony",
   "tlp-rdw",
+  "chrony",
   "sof-firmware",
 ]
 
