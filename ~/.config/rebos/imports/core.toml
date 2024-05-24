@@ -31,3 +31,8 @@ items = [
 items = [
   "NetworkManager.service",
 ]
+
+[managers.serv-enable]
+items = [
+  "systemd-boot-update.service",
+]
