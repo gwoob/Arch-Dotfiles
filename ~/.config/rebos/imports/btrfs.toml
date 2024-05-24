@@ -1,6 +1,7 @@
 [managers.system]
 items = [
   "btrfs-progs",
+  "snapper",
   # AUR
   "snap-pac",
   "snapper-rollback",
