@@ -30,6 +30,7 @@ items = [
 [managers.serv-now]
 items = [
   "NetworkManager.service",
+  "systemd-resolved.service",
 ]
 
 [managers.serv-enable]
