@@ -17,6 +17,7 @@ items = [
   "neovim",
   "zsh",
   "ufw",
+  "opensnitch",
   "ansible",
   # AUR
   "paru",
