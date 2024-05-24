@@ -16,6 +16,7 @@ items = [
   "systemd-resolvconf",
   "neovim",
   "zsh",
+  "ufw",
   # AUR
   "paru",
   "dashbinsh",
