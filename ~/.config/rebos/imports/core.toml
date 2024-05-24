@@ -14,15 +14,9 @@ items = [
   "amd-ucode",
   "networkmanager",
   "systemd-resolvconf",
-  "neovim",
-  "zsh",
-  "ufw",
-  "opensnitch",
-  "ansible",
   # AUR
   "paru",
   "dashbinsh",
-  "patool",
 ]
 
 [managers.flatpak]
