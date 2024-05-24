@@ -1,16 +1,10 @@
 [managers.system]
 items = [
-  "mpv",
-  "eza",
-  "emacs-wayland",
   "gimp",
-  "signal-desktop",
   # AUR
-  "librewolf-bin",
   "anki-bin",
   "hakuneko-desktop-nightly",
   "kcc",
-  "xdg-ninja",
 ]
 
 [managers.flatpak]
