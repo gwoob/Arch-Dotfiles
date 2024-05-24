@@ -1,7 +1,0 @@
-chronyd.service
-tlp.service
-systemd-networkd.service
-iwd.service
-systemd-resolved.service
-systemd-boot-update.service
-reflector.service
