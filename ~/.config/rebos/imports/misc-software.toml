@@ -8,10 +8,15 @@ items = [
   # AUR
   "librewolf-bin",
   "anki-bin",
+  "hakuneko-desktop-nightly",
+  "kcc",
+  "xdg-ninja",
 ]
 
 [managers.flatpak]
 items = [
   "com.belmoussaoui.Authenticator",
   "com.stremio.Stremio",
+  "io.gitlab.idevecore.Pomodoro",
+  "io.freetubeapp.FreeTube",
 ]
