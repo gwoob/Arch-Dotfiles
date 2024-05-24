@@ -1,0 +1,16 @@
+[managers.system]
+items = [
+  "neovim",
+  "zsh",
+  "eza",
+  "ufw",
+  "opensnitch",
+  "ansible",
+  "mpv",
+  "emacs-wayland",
+  "signal-desktop",
+  # AUR
+  "patool",
+  "librewolf-bin",
+  "xdg-ninja",
+]
