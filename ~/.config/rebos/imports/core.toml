@@ -22,6 +22,7 @@ items = [
   # AUR
   "paru",
   "dashbinsh",
+  "patool",
 ]
 
 [managers.flatpak]
