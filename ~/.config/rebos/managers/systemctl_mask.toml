@@ -1,0 +1,9 @@
+add = "sudo systemctl mask #:?"
+remove = "sudo systemctl unmask #:?"
+
+plural_name = "masked services"
+
+hook_name = "masked_services"
+
+[config]
+many_args = true
