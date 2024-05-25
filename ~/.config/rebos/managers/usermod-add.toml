@@ -1,0 +1,9 @@
+add = "sudo usermod -aG #:?"
+remove = "sudo usermod -aG #:?"
+
+plural_name = "groups"
+
+hook_name = "add_to_group"
+
+[config]
+many_args = true
