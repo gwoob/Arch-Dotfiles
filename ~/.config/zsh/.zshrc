@@ -78,10 +78,6 @@ startw='Hyprland'
 # Emacsclient
 alias emacs='emacsclient -c -a 'emacs' & disown'
 
-if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
-    export MOZ_ENABLE_WAYLAND=1
-fi
-
 export EDITOR=nvim
 export SUDO_EDITOR=nvim
 
