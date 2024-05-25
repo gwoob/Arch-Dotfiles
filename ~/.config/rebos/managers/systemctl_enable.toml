@@ -1,9 +1,9 @@
 add = "sudo systemctl enable #:?"
 remove = "sudo systemctl disable #:?"
 
-plural_name = "startup services"
+plural_name = "enabled services"
 
-hook_name = "startup_services"
+hook_name = "enabled_services"
 
 [config]
 many_args = true
