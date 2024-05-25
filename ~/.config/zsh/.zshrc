@@ -85,6 +85,6 @@ fi
 export EDITOR=nvim
 export SUDO_EDITOR=nvim
 
-[ -d $HOME/Scripts ] && PATH=$PATH:$HOME/Scripts
+[ -d $HOME/.local/bin ] && PATH=$PATH:$HOME/.local/bin
 
 [ -d $HOME/.emacs.d/bin ] && PATH=$PATH:$HOME/.emacs.d/bin
