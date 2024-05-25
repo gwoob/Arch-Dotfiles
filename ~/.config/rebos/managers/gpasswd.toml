@@ -6,4 +6,4 @@ plural_name = "user groups"
 hook_name = "user_groups"
 
 [config]
-many_args = false
+many_args = true
