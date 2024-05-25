@@ -1,9 +1,0 @@
-add = "sudo usermod -aG #:?"
-remove = "sudo usermod -aG #:?"
-
-plural_name = "groups"
-
-hook_name = "groups"
-
-[config]
-many_args = true
