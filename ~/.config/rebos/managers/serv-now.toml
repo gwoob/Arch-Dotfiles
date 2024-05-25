@@ -1,5 +1,5 @@
-add = "sudo systemctl enable #:? --now"
-remove = "sudo systemctl disable #:? --now"
+add = "sudo systemctl enable --now #:?"
+remove = "sudo systemctl disable --now #:?"
 
 plural_name = "services"
 
