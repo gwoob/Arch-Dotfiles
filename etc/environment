@@ -6,4 +6,4 @@ export XDG_STATE_HOME=$HOME/.local/state
 
 # Wayland
 export MOZ_ENABLE_WAYLAND=1
-ELECTRON_OZONE_PLATFORM_HINT=wayland
+export ELECTRON_OZONE_PLATFORM_HINT=wayland
