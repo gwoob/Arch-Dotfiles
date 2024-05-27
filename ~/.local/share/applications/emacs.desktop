@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Version=1.0
-Name=Emacs
-Comment=Launch Emacs GUI via daemon
-Exec=/usr/bin/emacsclient -c -a 'emacs'
-Icon=emacs
-Terminal=false
-Categories=Development;TextEditor;
