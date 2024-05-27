@@ -1,10 +1,10 @@
-[managers.system]
+[managers.paru]
 items = [
   "reflector",
   "pacman-contrib",
 ]
 
-[managers.serv-now]
+[managers.systemctl_now]
 items = [
   "reflector.service",
   "paccache.timer",
