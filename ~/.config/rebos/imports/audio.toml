@@ -1,15 +1,12 @@
 [managers.paru]
 items = [
   "pipewire",
-  "rtkit",
-  "realtime-privileges",
   "gst-plugin-pipewire",
   "pipewire-alsa",
   "pipewire-jack",
   "pipewire-pulse",
-  "wireplumber",
+  "alsa-utils",
   "easyeffects",
   "lsp-plugins-lv2",
   "qpwgraph",
-  "alsa-utils",
 ]
