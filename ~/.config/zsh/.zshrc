@@ -1,5 +1,3 @@
-source .profile
-
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
 
 autoload -Uz compinit promptinit
