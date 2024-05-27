@@ -1,1 +1,11 @@
-
+imports = [
+    "DE",
+    "arch",
+    "audio",
+    "btrfs",
+    "core",
+    "essential_software",
+    "laptop",
+    "misc_software",
+    "radeon",
+]
