@@ -3,7 +3,7 @@ imports = [
   "audio",
 ]
 
-[managers.system]
+[managers.paru]
 items = [
   "foot",
 ]
