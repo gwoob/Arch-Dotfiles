@@ -1,4 +1,4 @@
-[managers.system]
+[managers.paru]
 items = [
   "btrfs-progs",
   "snapper",
@@ -7,7 +7,7 @@ items = [
   "snapper-rollback",
 ]
 
-[managers.serv-startup]
+[managers.systemctl_enable]
 items = [
   "btrfs-scrub@btrfsroot.timer",
   "btrfs-scrub@-.timer",
