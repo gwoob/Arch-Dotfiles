@@ -1,6 +1,5 @@
 begin = [
     "paru",
-    "systemctl_mask",
 ]
 
 # Any other managers will run in between the begin and end stages.
