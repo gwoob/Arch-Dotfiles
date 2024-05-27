@@ -15,6 +15,7 @@ items = [
   "amd-ucode",
   "networkmanager",
   "systemd-resolvconf",
+  "xdg-user-dirs",
   # AUR
   "paru",
   "dashbinsh",
