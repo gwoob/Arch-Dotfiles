@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 # Check if the script is being run with sudo
 if [ "$(id -u)" -eq 0 ]; then
