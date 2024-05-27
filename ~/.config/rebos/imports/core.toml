@@ -35,3 +35,8 @@ items = [
 items = [
   "systemd-boot-update.service",
 ]
+
+[managers.gpasswd]
+items = [
+  "wheel",
+]
