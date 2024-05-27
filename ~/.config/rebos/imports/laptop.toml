@@ -1,11 +1,11 @@
-[managers.system]
+[managers.paru]
 items = [
   "tlp-rdw",
   "chrony",
   "sof-firmware",
 ]
 
-[managers.serv-now]
+[managers.systemctl_now]
 items = [
   "tlp.service",
   "NetworkManager-dispatcher.service",
