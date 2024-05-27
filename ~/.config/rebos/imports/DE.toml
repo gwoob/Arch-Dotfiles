@@ -1,9 +1,0 @@
-imports = [
-  "hypr*",
-  "audio",
-]
-
-[managers.paru]
-items = [
-  "foot",
-]
