@@ -1,4 +1,4 @@
-[managers.system]
+[managers.paru]
 items = [
   "rebos",
   "linux-zen",
@@ -25,13 +25,13 @@ items = [
   "com.github.tchx84.Flatseal",
 ]
 
-[managers.serv-now]
+[managers.systemctl_now]
 items = [
   "NetworkManager.service",
   "systemd-resolved.service",
 ]
 
-[managers.serv-enable]
+[managers.systemctl_enable]
 items = [
   "systemd-boot-update.service",
 ]
