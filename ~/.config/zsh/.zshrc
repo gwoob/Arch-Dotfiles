@@ -19,7 +19,9 @@ setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording en
 # Command auto-correction
 setopt correct
 
-fastfetch --logo-type small -s title:os:kernelcpu:gpu:memory:disk
+if command -v fastfetch >/dev/null 2>&1; then
+fastfetch
+fi
 
 PROMPT='%~'$'\n''> '
 
