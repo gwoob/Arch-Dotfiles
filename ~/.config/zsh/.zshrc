@@ -19,8 +19,8 @@ setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording en
 # Command auto-correction
 setopt correct
 
-if command -v fastfetch >/dev/null 2>&1; then
-fastfetch
+if command -v fastfetch > /dev/null; then
+	fastfetch
 fi
 
 PROMPT='%~'$'\n''> '
