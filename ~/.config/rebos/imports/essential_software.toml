@@ -3,6 +3,7 @@ items = [
   "neovim",
   "zsh",
   "eza",
+  "wl-clipboard",
   "ufw",
   "opensnitch",
   "ansible",
