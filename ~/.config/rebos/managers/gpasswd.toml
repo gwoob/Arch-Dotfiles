@@ -7,5 +7,4 @@ hook_name = "user_groups"
 
 [config]
 many_args = true
-
 arg_sep = ","
