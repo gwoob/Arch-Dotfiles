@@ -1,7 +1,7 @@
 [character]
-success_symbol = "[>](bright white)"
-error_symbol = "[x](bright white)"
-vimcmd_symbol = "[<](bright white)"
+success_symbol = "[>](bold green)"
+error_symbol = "[x](bold red)"
+vimcmd_symbol = "[<](bold green)"
 
 [git_commit]
 tag_symbol = " tag "
