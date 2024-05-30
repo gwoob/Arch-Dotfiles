@@ -55,9 +55,6 @@ alias cp='cp -i'
 # Always prompt for confirmation when moving files
 alias mv='mv -i'
 
-# Always prompt for confirmation when deleting files
-alias rm='trash -v'
-
 # Aliases for clipboard copy and paste using 'xclip'
 alias wcopy='wl-copy'
 alias wpast='wl-paste'
@@ -84,3 +81,6 @@ export SUDO_EDITOR=nvim
 [ -d $HOME/.local/bin ] && PATH=$PATH:$HOME/.local/bin
 
 [ -d $HOME/.emacs.d/bin ] && PATH=$PATH:$HOME/.emacs.d/bin
+
+# Non-GNU
+alias rm='trash -v'
