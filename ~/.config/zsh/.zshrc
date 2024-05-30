@@ -56,7 +56,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 
 # Always prompt for confirmation when deleting files
-alias rm='rm -i'
+alias rm='trash -v'
 
 # Aliases for clipboard copy and paste using 'xclip'
 alias wcopy='wl-copy'
