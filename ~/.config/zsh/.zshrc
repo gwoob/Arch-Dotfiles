@@ -55,8 +55,8 @@ alias cp='cp -i'
 alias mv='mv -i'
 
 # Aliases for clipboard copy and paste using 'xclip'
-alias wcopy='wl-copy'
-alias wpast='wl-paste'
+alias wlc='wl-copy'
+alias wlp='wl-paste'
 
 # Enable color highlighting for grep
 alias grep='grep --color=auto'
