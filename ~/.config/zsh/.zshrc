@@ -33,8 +33,8 @@ precmd() {
 
 bindkey -v
 
-# zsh-autosuggestions plugin
-source /opt/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 
 # Enable a cache for completions
 zstyle ':completion::complete:*' use-cache 1
