@@ -1,0 +1,7 @@
+[managers.paru]
+items = [
+  "zsh",
+  "zsh-completions",
+  "zsh-autosuggestions",
+  "zsh-syntax-highlighting",
+]
