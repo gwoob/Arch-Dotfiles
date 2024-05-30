@@ -43,6 +43,11 @@
   ;; Enable Elpaca support for use-package's :ensure keyword.
   (elpaca-use-package-mode))
 
+(use-package org)
+(global-set-key (kbd "C-c l") #'org-store-link)
+(global-set-key (kbd "C-c a") #'org-agenda)
+(global-set-key (kbd "C-c c") #'org-capture)
+
 ;; Install meow with Elpaca
 (use-package meow
   :ensure t
