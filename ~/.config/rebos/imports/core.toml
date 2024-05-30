@@ -40,4 +40,5 @@ items = [
 [managers.gpasswd]
 items = [
   "wheel",
+  "storage",
 ]
