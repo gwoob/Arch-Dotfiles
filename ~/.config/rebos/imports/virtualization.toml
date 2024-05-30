@@ -1,0 +1,16 @@
+[managers.paru]
+items = [
+  "pipewire",
+  "gst-plugin-pipewire",
+]
+
+[managers.gpasswd]
+items = [
+  "libvirt",
+  "kvm",
+]
+
+[managers.systemctl_now]
+items = [
+  "libvirtd.socket",
+]
