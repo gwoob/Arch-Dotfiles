@@ -38,12 +38,12 @@
 (add-hook 'after-init-hook #'elpaca-process-queues)
 (elpaca `(,@elpaca-order))
 
-;; use-package support for Elpaca
+;; Use-package support for Elpaca
 (elpaca elpaca-use-package
   ;; Enable Elpaca support for use-package's :ensure keyword.
   (elpaca-use-package-mode))
 
-;; Install meow with Elpaca
+;; Setup Meow
 (use-package meow
   :ensure t
   :config
