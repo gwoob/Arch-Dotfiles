@@ -38,12 +38,12 @@
 (add-hook 'after-init-hook #'elpaca-process-queues)
 (elpaca `(,@elpaca-order))
 
-;; Use-package support for Elpaca
+;; use-package support for Elpaca
 (elpaca elpaca-use-package
   ;; Enable Elpaca support for use-package's :ensure keyword.
   (elpaca-use-package-mode))
 
-;; Setup Meow
+;; Install meow with Elpaca
 (use-package meow
   :ensure t
   :config
@@ -137,3 +137,12 @@
    '("z" . meow-pop-selection)
    '("'" . repeat)
    '("<escape>" . ignore)))
+
+(scroll-bar-mode -1)
+
+(global-display-line-numbers-mode 1)
+
+(load-theme 'modus-vivendi t)
+
+(setq display-line-numbers-type 'relative)
+(global-display-line-numbers-mode)
