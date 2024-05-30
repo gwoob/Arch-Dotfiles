@@ -74,6 +74,7 @@ startw='Hyprland'
 # Emacsclient
 alias emacs='emacsclient -c -a 'emacs' & disown'
 
+export VISUAL=nvim
 export EDITOR=nvim
 export SUDO_EDITOR=nvim
 
