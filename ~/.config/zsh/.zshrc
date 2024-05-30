@@ -31,8 +31,7 @@ precmd() {
     }
 }
 
-# zsh-vi-mode plugin
-source /opt/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+bindkey -v
 
 # zsh-autosuggestions plugin
 source /opt/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
