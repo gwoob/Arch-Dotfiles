@@ -4,6 +4,7 @@ items = [
   "zsh",
   "eza",
   "wl-clipboard",
+  "trash-cli",
   "ufw",
   "opensnitch",
   "ansible",
