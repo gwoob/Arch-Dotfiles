@@ -151,3 +151,11 @@
 
 (setq display-line-numbers-type 'relative)
 (global-display-line-numbers-mode)
+
+(ido-mode 1)
+(ido-everywhere 1)
+(setq ido-enable-flex-matching t)
+
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(scroll-bar-mode -1)
