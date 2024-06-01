@@ -162,3 +162,25 @@
 
 (use-package eat
   :ensure t)
+
+;; use-package with Elpaca:
+(use-package dashboard
+  :ensure t
+  :config
+  (add-hook 'elpaca-after-init-hook #'dashboard-insert-startupify-lists)
+  (add-hook 'elpaca-after-init-hook #'dashboard-initialize)
+  (dashboard-setup-startup-hook))
+
+(setq dashboard-center-content t)
+
+(setq dashboard-vertically-center-content t)
+
+(setq dashboard-startupify-list '(dashboard-insert-banner
+                                  dashboard-insert-newline
+				  dashboard-insert-init-info
+                                  dashboard-insert-newline
+                                  dashboard-insert-items))
+
+(use-package doom-modeline
+  :ensure t
+  :init (doom-modeline-mode 1))
