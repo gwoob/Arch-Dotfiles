@@ -1,5 +1,5 @@
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
-
+#
 autoload -Uz compinit promptinit
 compinit
 promptinit
@@ -19,22 +19,9 @@ setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording en
 # Command auto-correction
 setopt correct
 
-if command -v fastfetch > /dev/null; then
-	fastfetch
-fi
 
-PROMPT='%~'$'\n''> '
 
-precmd() {
-    precmd() {
-        echo
-    }
-}
-
-bindkey -v
-
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+#bindkey -v
 
 # Enable a cache for completions
 zstyle ':completion::complete:*' use-cache 1
@@ -71,16 +58,67 @@ unz='patool extract'
 startx='Hyprland'
 startw='Hyprland'
 
-# Emacsclient
-alias emacs='emacsclient -c -a 'emacs' & disown'
-
 export VISUAL=nvim
 export EDITOR=nvim
 export SUDO_EDITOR=nvim
 
-[ -d $HOME/.local/bin ] && PATH=$PATH:$HOME/.local/bin
-
-[ -d $HOME/.emacs.d/bin ] && PATH=$PATH:$HOME/.emacs.d/bin
+if [ -d $HOME/.local/bin ]; then
+    PATH=$PATH:$HOME/.local/bin
+else
+    mkdir $HOME/.local/bin
+    PATH=$PATH:$HOME/.local/bin
+fi
 
 # Non-GNU
-alias rm='trash -v'
+if command -v trash > /dev/null; then
+    alias rm='trash -v'
+else
+    echo "Install trash-cli package for extra features."
+fi
+
+### Create function that grabs a list of installed packages and instead of printing the same line with different package names, lists the packages that need to be installed.
+if command -v fastfetch > /dev/null; then
+    fastfetch
+else
+    echo "Install fastfetch package for extra features."
+fi
+
+if command -v starship > /dev/null; then
+    eval "$(starship init zsh)"
+else
+    echo
+    precmd() {
+        echo
+    }
+    PROMPT='%~'$'\n''> '
+    echo "Install starship package for extra features."
+fi
+
+if [ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
+    source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+else
+    echo "Install zsh-autosuggestions package for extra features."
+fi
+
+if [ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh ]; then
+    source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+else
+    echo "Install zsh-syntax-highlighting package for extra features."
+fi
+
+
+
+
+
+
+
+ftext() {
+	# -i case-insensitive
+	# -I ignore binary files
+	# -H causes filename to be printed
+	# -r recursive search
+	# -n causes line number to be printed
+	# optional: -F treat search term as a literal, not a regular expression
+	# optional: -l only print filenames and not the matching lines ex. grep -irl "$1" *
+	grep -iIHrn --color=always "$1" . | less -r
+}
