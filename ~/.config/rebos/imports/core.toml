@@ -16,6 +16,9 @@ items = [
   "networkmanager",
   "systemd-resolvconf",
   "xdg-user-dirs",
+  "noto-fonts",
+  "ttf-liberation",
+  
   # AUR
   "paru",
   "dashbinsh",
