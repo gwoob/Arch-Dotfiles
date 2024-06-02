@@ -184,3 +184,4 @@
 (use-package doom-modeline
   :ensure t
   :init (doom-modeline-mode 1))
+(setq initial-buffer-choice (lambda () (get-buffer-create dashboard-buffer-name)))
