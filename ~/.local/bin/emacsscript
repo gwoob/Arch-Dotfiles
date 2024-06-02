@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
 
-# Check if the Emacs daemon is running
 if emacsclient -e "(emacs-pid)" &>/dev/null; then
   emacsclient -c &
 else
