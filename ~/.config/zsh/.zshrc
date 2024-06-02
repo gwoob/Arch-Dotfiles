@@ -27,7 +27,7 @@ setopt correct
 zstyle ':completion::complete:*' use-cache 1
 
 # text editor script
-alias edit='edit.sh'
+alias edit='emacs -c -t -a kakoune'
 
 # Add space after 'sudo'; 'sudo' as substitute for 'doas'
 alias sudo='sudo '
