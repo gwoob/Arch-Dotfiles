@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 
 if emacsclient -e "(emacs-pid)" &>/dev/null; then
-  emacsclient -c &
+  emacsclient -c -n
 else
   emacs --daemon
-  emacsclient -c &
+  emacsclient -c -n
 fi
