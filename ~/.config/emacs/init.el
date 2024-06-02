@@ -185,3 +185,6 @@
   :ensure t
   :init (doom-modeline-mode 1))
 (setq initial-buffer-choice (lambda () (get-buffer-create dashboard-buffer-name)))
+
+(add-to-list 'default-frame-alist '(font . "firacode" ))
+(set-face-attribute 'default t :font "firacode" )
