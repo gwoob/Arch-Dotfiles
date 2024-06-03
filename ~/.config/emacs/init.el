@@ -156,6 +156,9 @@
 (ido-everywhere 1)
 (setq ido-enable-flex-matching t)
 
+(icomplete-mode 1)
+
+(setq inhibit-startup-screen t)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
@@ -186,5 +189,5 @@
   :init (doom-modeline-mode 1))
 (setq initial-buffer-choice (lambda () (get-buffer-create dashboard-buffer-name)))
 
-(add-to-list 'default-frame-alist '(font . "firacode" ))
-(set-face-attribute 'default t :font "firacode" )
+(add-to-list 'default-frame-alist '(font . "firacodenerdfont" ))
+(set-face-attribute 'default t :font "firacodenerdfont" )
