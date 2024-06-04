@@ -1,3 +1,9 @@
+(setq custom-file "~/.emacs.d/custom.el")
+
+;; Load the custom settings file
+(when (file-exists-p custom-file)
+  (load custom-file))
+
 (load-theme 'modus-vivendi t)
 
 ;; Vertical Scroll
