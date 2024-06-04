@@ -223,3 +223,6 @@
 
 (use-package olivetti
   :ensure t)
+
+(use-package sudo-edit
+  :ensure t)
