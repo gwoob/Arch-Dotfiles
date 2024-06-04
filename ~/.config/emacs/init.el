@@ -189,6 +189,8 @@
   (add-hook 'elpaca-after-init-hook #'dashboard-initialize)
   (dashboard-setup-startup-hook))
 
+(setq initial-buffer-choice (lambda () (get-buffer-create dashboard-buffer-name)))
+
 (setq dashboard-center-content t)
 
 (setq dashboard-vertically-center-content t)
