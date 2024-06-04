@@ -1,3 +1,20 @@
+(load-theme 'modus-vivendi t)
+
+;; Vertical Scroll
+(setq scroll-step 1)
+(setq scroll-margin 1)
+(setq scroll-conservatively 101)
+(setq scroll-up-aggressively 0.01)
+(setq scroll-down-aggressively 0.01)
+(setq auto-window-vscroll nil)
+(setq fast-but-imprecise-scrolling nil)
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
+(setq mouse-wheel-progressive-speed nil)
+;; Horizontal Scroll
+(setq hscroll-step 1)
+(setq hscroll-margin 1)
+
+
 ;; Install Elpaca package manager
 (defvar elpaca-installer-version 0.7)
 (defvar elpaca-directory (expand-file-name "elpaca/" user-emacs-directory))
@@ -147,8 +164,6 @@
 
 (global-display-line-numbers-mode 1)
 
-(load-theme 'modus-vivendi t)
-
 (setq display-line-numbers-type 'relative)
 (global-display-line-numbers-mode)
 
@@ -184,10 +199,25 @@
                                   dashboard-insert-newline
                                   dashboard-insert-items))
 
-(use-package doom-modeline
-  :ensure t
-  :init (doom-modeline-mode 1))
-(setq initial-buffer-choice (lambda () (get-buffer-create dashboard-buffer-name)))
+;;(use-package doom-modeline
+;;  :ensure t
+;;  :init (doom-modeline-mode 1))
+;;(setq initial-buffer-choice (lambda () (get-buffer-create dashboard-buffer-name)))
 
 (add-to-list 'default-frame-alist '(font . "firacodenerdfont" ))
 (set-face-attribute 'default t :font "firacodenerdfont" )
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages '(eglot)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+(use-package olivetti
+  :ensure t)
