@@ -1,0 +1,6 @@
+# -*- after-save-hook: (org-babel-tangle); before-save-hook: (delete-trailing-whitespace)-*-
+#+PROPERTY: header-args:emacs-lisp :exports code :results none :tangle init.el
+
+#+BEGIN_SRC emacs-lisp
+
+#+END_SRC
