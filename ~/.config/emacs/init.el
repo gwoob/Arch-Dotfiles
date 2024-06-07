@@ -1,10 +1,28 @@
-(setq custom-file "~/.emacs.d/custom.el")
-
-;; Load the custom settings file
-(when (file-exists-p custom-file)
-  (load custom-file))
+(setq inhibit-startup-screen t)
+(scroll-bar-mode -1)
+(tool-bar-mode -1)
+(menu-bar-mode -1)
 
 (load-theme 'modus-vivendi t)
+
+(require 'package)
+(add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+(package-initialize)
+
+(setq package-install-upgrade-built-in t)
+
+(setq make-backup-files nil)
+(setq auto-save-default nil)
+
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+
+(use-package no-littering
+  :ensure t)
+
+(let ((dir (no-littering-expand-var-file-name "lock-files/")))
+  (make-directory dir t)
+  (setq lock-file-name-transforms `((".*" ,dir t))))
 
 ;; Vertical Scroll
 (setq scroll-step 1)
@@ -20,66 +38,38 @@
 (setq hscroll-step 1)
 (setq hscroll-margin 1)
 
+(global-display-line-numbers-mode 1)
+(setq display-line-numbers-type 'relative)
 
-;; Install Elpaca package manager
-(defvar elpaca-installer-version 0.7)
-(defvar elpaca-directory (expand-file-name "elpaca/" user-emacs-directory))
-(defvar elpaca-builds-directory (expand-file-name "builds/" elpaca-directory))
-(defvar elpaca-repos-directory (expand-file-name "repos/" elpaca-directory))
-(defvar elpaca-order '(elpaca :repo "https://github.com/progfolio/elpaca.git"
-                              :ref nil :depth 1
-                              :files (:defaults "elpaca-test.el" (:exclude "extensions"))
-                              :build (:not elpaca--activate-package)))
-(let* ((repo  (expand-file-name "elpaca/" elpaca-repos-directory))
-       (build (expand-file-name "elpaca/" elpaca-builds-directory))
-       (order (cdr elpaca-order))
-       (default-directory repo))
-  (add-to-list 'load-path (if (file-exists-p build) build repo))
-  (unless (file-exists-p repo)
-    (make-directory repo t)
-    (when (< emacs-major-version 28) (require 'subr-x))
-    (condition-case-unless-debug err
-        (if-let ((buffer (pop-to-buffer-same-window "*elpaca-bootstrap*"))
-                 ((zerop (apply #'call-process `("git" nil ,buffer t "clone"
-                                                 ,@(when-let ((depth (plist-get order :depth)))
-                                                     (list (format "--depth=%d" depth) "--no-single-branch"))
-                                                 ,(plist-get order :repo) ,repo))))
-                 ((zerop (call-process "git" nil buffer t "checkout"
-                                       (or (plist-get order :ref) "--"))))
-                 (emacs (concat invocation-directory invocation-name))
-                 ((zerop (call-process emacs nil buffer nil "-Q" "-L" "." "--batch"
-                                       "--eval" "(byte-recompile-directory \".\" 0 'force)")))
-                 ((require 'elpaca))
-                 ((elpaca-generate-autoloads "elpaca" repo)))
-            (progn (message "%s" (buffer-string)) (kill-buffer buffer))
-          (error "%s" (with-current-buffer buffer (buffer-string))))
-      ((error) (warn "%s" err) (delete-directory repo 'recursive))))
-  (unless (require 'elpaca-autoloads nil t)
-    (require 'elpaca)
-    (elpaca-generate-autoloads "elpaca" repo)
-    (load "./elpaca-autoloads")))
-(add-hook 'after-init-hook #'elpaca-process-queues)
-(elpaca `(,@elpaca-order))
+(icomplete-vertical-mode 1)
+(fido-vertical-mode 1)
 
-;; use-package support for Elpaca
-(elpaca elpaca-use-package
-  ;; Enable Elpaca support for use-package's :ensure keyword.
-  (elpaca-use-package-mode))
+(add-to-list 'default-frame-alist '(font . "firacodenerdfont" ))
+(set-face-attribute 'default t :font "firacodenerdfont" )
 
-(use-package org)
-(global-set-key (kbd "C-c l") #'org-store-link)
-(global-set-key (kbd "C-c a") #'org-agenda)
-(global-set-key (kbd "C-c c") #'org-capture)
-
-;; Install meow with Elpaca
-(use-package meow
+;; use-package with package.el:
+(use-package dashboard
   :ensure t
   :config
-(require 'meow)
-(meow-setup)
-(meow-global-mode 1)
-)
+  (dashboard-setup-startup-hook))
 
+(setq dashboard-center-content t)
+
+;; this doesnt work without a manual refresh, needs fixed
+(setq dashboard-vertically-center-content t)
+
+(setq dashboard-startupify-list '(dashboard-insert-banner
+                                  dashboard-insert-newline
+				  dashboard-insert-init-info
+                                  dashboard-insert-newline
+                                  dashboard-insert-items))
+(setq initial-buffer-choice (lambda () (get-buffer-create dashboard-buffer-name)))
+
+(use-package magit
+  :ensure t)
+
+(use-package meow
+  :ensure t)
 (defun meow-setup ()
   (setq meow-cheatsheet-layout meow-cheatsheet-layout-qwerty)
   (meow-motion-overwrite-define-key
@@ -165,70 +155,13 @@
    '("z" . meow-pop-selection)
    '("'" . repeat)
    '("<escape>" . ignore)))
+(require 'meow)
+(meow-setup)
+(meow-global-mode 1)
 
-(scroll-bar-mode -1)
+;; Get rid of line hints (use built-in relative line numbering instead)
+(setq meow-expand-hint-counts '(line . 0))
 
-(global-display-line-numbers-mode 1)
-
-(setq display-line-numbers-type 'relative)
-(global-display-line-numbers-mode)
-
-(ido-mode 1)
-(ido-everywhere 1)
-(setq ido-enable-flex-matching t)
-
-(icomplete-mode 1)
-
-(setq inhibit-startup-screen t)
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-(scroll-bar-mode -1)
-
-(use-package eat
-  :ensure t)
-
-;; use-package with Elpaca:
-(use-package dashboard
-  :ensure t
-  :config
-  (add-hook 'elpaca-after-init-hook #'dashboard-insert-startupify-lists)
-  (add-hook 'elpaca-after-init-hook #'dashboard-initialize)
-  (dashboard-setup-startup-hook))
-
-(setq initial-buffer-choice (lambda () (get-buffer-create dashboard-buffer-name)))
-
-(setq dashboard-center-content t)
-
-(setq dashboard-vertically-center-content t)
-
-(setq dashboard-startupify-list '(dashboard-insert-banner
-                                  dashboard-insert-newline
-				  dashboard-insert-init-info
-                                  dashboard-insert-newline
-                                  dashboard-insert-items))
-
-;;(use-package doom-modeline
-;;  :ensure t
-;;  :init (doom-modeline-mode 1))
-;;(setq initial-buffer-choice (lambda () (get-buffer-create dashboard-buffer-name)))
-
-(add-to-list 'default-frame-alist '(font . "firacodenerdfont" ))
-(set-face-attribute 'default t :font "firacodenerdfont" )
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages '(eglot)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-
-(use-package olivetti
-  :ensure t)
-
-(use-package sudo-edit
-  :ensure t)
+(delete-selection-mode 1)
+(setq blink-cursor-mode nil)
+(column-number-mode 1)
