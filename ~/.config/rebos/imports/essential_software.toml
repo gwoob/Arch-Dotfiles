@@ -1,6 +1,6 @@
 [managers.paru]
 items = [
-  "neovim",
+  "mg",
   "zsh",
   "eza",
   "wl-clipboard",
