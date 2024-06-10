@@ -3,6 +3,7 @@ items = [
   "tlp-rdw",
   "chrony",
   "sof-firmware",
+  "kanshi"
 ]
 
 [managers.systemctl_now]
