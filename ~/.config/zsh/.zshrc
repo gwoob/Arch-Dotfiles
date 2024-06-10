@@ -20,14 +20,13 @@ setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording en
 setopt correct
 
 
-
-#bindkey -v
+bindkey -e
 
 # Enable a cache for completions
 zstyle ':completion::complete:*' use-cache 1
 
 # text editor script
-alias edit='emacs -c -t -a kakoune'
+alias edit='sudoedit'
 
 # Add space after 'sudo'; 'sudo' as substitute for 'doas'
 alias sudo='sudo '
@@ -58,9 +57,9 @@ unz='patool extract'
 startx='Hyprland'
 startw='Hyprland'
 
-export VISUAL=nvim
-export EDITOR=nvim
-export SUDO_EDITOR=nvim
+export VISUAL=mg
+export EDITOR=mg
+export SUDO_EDITOR=mg
 
 if [ -d $HOME/.local/bin ]; then
     PATH=$PATH:$HOME/.local/bin
