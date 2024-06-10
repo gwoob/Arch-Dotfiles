@@ -40,7 +40,7 @@ items = [
   "systemd-boot-update.service",
 ]
 
-[managers.gpasswd]
+[managers.usermod]
 items = [
   "wheel",
   "storage",
