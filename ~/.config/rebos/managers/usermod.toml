@@ -1,5 +1,4 @@
-add = "sudo gpasswd -a ${USER} #:?"
-remove = "sudo gpasswd -d ${USER} #:?"
+add = "usermod -aG #:? ${USER}"
 
 plural_name = "user groups"
 
