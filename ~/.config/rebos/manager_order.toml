@@ -1,11 +1,4 @@
 begin = [
     "paru",
-]
-
-# Any other managers will run in between the begin and end stages.
-
-end = [
-    "gpasswd",
-    "systemctl_enable",
-    "systemctl_now",
+    "usermod",
 ]
