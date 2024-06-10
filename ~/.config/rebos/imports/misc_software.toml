@@ -1,10 +1,6 @@
 [managers.paru]
 items = [
   "gimp",
-  # AUR
-  "anki-bin",
-  "hakuneko-desktop-nightly",
-  "kcc",
 ]
 
 [managers.flatpak]
@@ -13,4 +9,7 @@ items = [
   "com.stremio.Stremio",
   "io.gitlab.idevecore.Pomodoro",
   "io.freetubeapp.FreeTube",
+  "io.github.hakuneko.HakuNeko",
+  "io.github.ciromattia.kcc",
+  "net.ankiweb.Anki",
 ]
