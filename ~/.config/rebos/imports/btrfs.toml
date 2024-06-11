@@ -7,7 +7,7 @@ items = [
   "snapper-rollback",
 ]
 
-[managers.systemctl_enable]
+[managers.systemctl]
 items = [
   "btrfs-scrub@btrfsroot.timer",
   "btrfs-scrub@-.timer",
