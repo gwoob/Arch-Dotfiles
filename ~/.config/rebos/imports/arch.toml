@@ -4,7 +4,7 @@ items = [
   "pacman-contrib",
 ]
 
-[managers.systemctl_now]
+[managers.systemctl]
 items = [
   "reflector.service",
   "paccache.timer",
