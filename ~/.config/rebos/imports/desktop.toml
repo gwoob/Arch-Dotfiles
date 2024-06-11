@@ -1,4 +1,0 @@
-[managers.systemctl_now]
-items = [
-  "systemd-timesyncd.service",
-]
