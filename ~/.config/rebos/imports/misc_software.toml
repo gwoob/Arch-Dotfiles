@@ -1,11 +1,5 @@
-[managers.paru]
-items = [
-  "gimp",
-]
-
 [managers.flatpak]
 items = [
-  "com.belmoussaoui.Authenticator",
   "com.stremio.Stremio",
   "io.gitlab.idevecore.Pomodoro",
   "io.freetubeapp.FreeTube",
