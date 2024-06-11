@@ -16,3 +16,8 @@ items = [
   "librewolf-bin",
   "xdg-ninja",
 ]
+
+[managers.systemctl_user]
+items = [
+  "emacs.service",
+]
