@@ -1,0 +1,9 @@
+add = "sudo systemctl enable --user --now #:?"
+remove = "sudo systemctl disable --user --now #:?"
+
+plural_name = "systemd user services"
+
+hook_name = "systemd_user_services"
+
+[config]
+many_args = true
