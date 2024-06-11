@@ -10,8 +10,3 @@ items = [
   "lsp-plugins-lv2",
   "qpwgraph",
 ]
-
-[managers.systemctl_user]
-items = [
-  "pipewire-pulse.service",
-]
