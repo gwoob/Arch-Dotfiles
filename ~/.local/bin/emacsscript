@@ -3,6 +3,6 @@
 if emacsclient -e "(emacs-pid)" &>/dev/null; then
   emacsclient -c -n
 else
-  emacs --daemon
+  systemctl start --user emacs.service
   emacsclient -c -n
 fi
