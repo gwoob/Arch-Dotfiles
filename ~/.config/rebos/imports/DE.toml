@@ -1,10 +1,8 @@
 [managers.paru]
 items = [
   "hyprland",
-  "hyprcursor",
   "hypridle",
   "hyprlock",
-  "hyprwayland-scanner",
   "xdg-desktop-portal-hyprland",
   "bemenu",
   "foot",
