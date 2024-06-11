@@ -10,7 +10,7 @@ items = [
   "kvm",
 ]
 
-[managers.systemctl_now]
+[managers.systemctl]
 items = [
   "libvirtd.socket",
 ]
