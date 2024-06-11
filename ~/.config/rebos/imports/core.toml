@@ -29,14 +29,10 @@ items = [
   "com.github.tchx84.Flatseal",
 ]
 
-[managers.systemctl_now]
+[managers.systemctl]
 items = [
   "NetworkManager.service",
   "systemd-resolved.service",
-]
-
-[managers.systemctl_enable]
-items = [
   "systemd-boot-update.service",
 ]
 
