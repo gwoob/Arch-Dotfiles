@@ -1,4 +1,4 @@
-add = "usermod -aG #:? ${USER}"
+add = "usermod -G #:? ${USER}"
 
 plural_name = "user groups"
 
