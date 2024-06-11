@@ -9,3 +9,8 @@ items = [
   "rofi-wayland",
   "foot",
 ]
+
+[managers.systemctl_user]
+items = [
+  "foot-server.socket",
+]
