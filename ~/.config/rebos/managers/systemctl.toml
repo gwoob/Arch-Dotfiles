@@ -1,9 +1,9 @@
 add = "sudo systemctl enable --now #:?"
 remove = "sudo systemctl disable --now #:?"
 
-plural_name = "enabled now services"
+plural_name = "systemd services"
 
-hook_name = "enabled_now_services"
+hook_name = "systemd_services"
 
 [config]
 many_args = true
