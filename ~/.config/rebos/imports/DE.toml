@@ -3,7 +3,9 @@ items = [
   "hyprland",
   "hypridle",
   "hyprlock",
+  "hyprpaper",
   "xdg-desktop-portal-hyprland",
+  "waybar",
   "rofi-wayland",
   "foot",
 ]
