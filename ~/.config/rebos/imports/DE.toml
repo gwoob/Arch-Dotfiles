@@ -4,6 +4,6 @@ items = [
   "hypridle",
   "hyprlock",
   "xdg-desktop-portal-hyprland",
-  "bemenu",
+  "rofi-wayland",
   "foot",
 ]
