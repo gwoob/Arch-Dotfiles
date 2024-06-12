@@ -9,3 +9,10 @@ imports = [
     "misc_software",
     "radeon",
 ]
+
+[managers.paru]
+items = [
+  "rclone",
+  "usbgaurd",
+  "waydroid",
+]
