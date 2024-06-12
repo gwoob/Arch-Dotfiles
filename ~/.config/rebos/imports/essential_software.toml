@@ -2,6 +2,7 @@
 items = [
   "mg",
   "zsh",
+  "stow",
   "eza",
   "wl-clipboard",
   "trash-cli",
