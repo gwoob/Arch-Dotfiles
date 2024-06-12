@@ -6,6 +6,7 @@ items = [
   "linux-firmware",
   "base",
   "base-devel",
+  "git",
   "sudo",
   "btrfs-progs",
   "e2fsprogs",
