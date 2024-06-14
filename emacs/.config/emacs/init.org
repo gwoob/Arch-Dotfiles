@@ -283,29 +283,45 @@
 ** Emacs-everywhere
 
 #+BEGIN_SRC emacs-lisp
-      (use-package emacs-everywhere
-        :ensure t)
+
+    (use-package emacs-everywhere
+      :ensure t)
 
 
 
-      (setq emacs-everywhere-window-focus-command (list "hyprctl" "dispatch" "focuswindow" "address:%w"))
-    (setq emacs-everywhere-app-info-function #'emacs-everywhere--app-info-linux-hyprland)
+    (setq emacs-everywhere-window-focus-command (list "hyprctl" "dispatch" "focuswindow" "address:%w"))
+  (setq emacs-everywhere-app-info-function #'emacs-everywhere--app-info-linux-hyprland)
 
-    (require 'json)
-    (defun emacs-everywhere--app-info-linux-hyprland ()
-      "Return information on the current active window, on a Linux Hyprland session."
-      (let* ((json-string (emacs-everywhere--call "hyprctl" "-j" "activewindow"))
-             (json-object (json-read-from-string json-string))
-             (window-id (cdr (assoc 'address json-object)))
-             (app-name (cdr (assoc 'class json-object)))
-             (window-title (cdr (assoc 'title json-object)))
-             (window-geometry (list (aref (cdr (assoc 'at json-object)) 0)
-                                    (aref (cdr (assoc 'at json-object)) 1)
-                                    (aref (cdr (assoc 'size json-object)) 0)
-                                    (aref (cdr (assoc 'size json-object)) 1))))
-        (make-emacs-everywhere-app
-         :id window-id
-         :class app-name
-         :title window-title
-         :geometry window-geometry)))
+  (require 'json)
+  (defun emacs-everywhere--app-info-linux-hyprland ()
+    "Return information on the current active window, on a Linux Hyprland session."
+    (let* ((json-string (emacs-everywhere--call "hyprctl" "-j" "activewindow"))
+           (json-object (json-read-from-string json-string))
+           (window-id (cdr (assoc 'address json-object)))
+           (app-name (cdr (assoc 'class json-object)))
+           (window-title (cdr (assoc 'title json-object)))
+           (window-geometry (list (aref (cdr (assoc 'at json-object)) 0)
+                                  (aref (cdr (assoc 'at json-object)) 1)
+                                  (aref (cdr (assoc 'size json-object)) 0)
+                                  (aref (cdr (assoc 'size json-object)) 1))))
+      (make-emacs-everywhere-app
+       :id window-id
+       :class app-name
+       :title window-title
+       :geometry window-geometry)))
+
+#+END_SRC
+
+** Rustic-mode
+
+#+BEGIN_SRC emacs-lisp
+
+  (use-package rust-mode
+    :ensure t)
+  (global-treesit-mode 1)
+
+  (use-package eglot
+    :ensure t
+    :hook (prog-mode . eglot-ensure))
+
 #+END_SRC
