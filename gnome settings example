@@ -1,0 +1,55 @@
+#!/bin/bash
+#
+# Collection of custom Gnome settings.
+#
+# Author : Scott Barr
+# Date   : 9 Jul 2018
+#
+
+# alt-tab only cycles current workspace
+gsettings set org.gnome.shell.app-switcher current-workspace-only true
+
+# disable caps-lock
+dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:none']"
+
+# switch to workspace
+dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-1 "['<Primary>1']"
+dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-2 "['<Primary>2']"
+dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-3 "['<Primary>3']"
+dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-4 "['<Primary>4']"
+dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-5 "['<Primary>5']"
+dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-6 "['<Primary>6']"
+
+# move window to workspace
+dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-1 "['<Primary><Alt>1']"
+dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-2 "['<Primary><Alt>2']"
+dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-3 "['<Primary><Alt>3']"
+dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-4 "['<Primary><Alt>4']"
+dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-5 "['<Primary><Alt>5']"
+dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-6 "['<Primary><Alt>6']"
+
+# disable edge tiling and auto maximize
+dconf write /org/gnome/mutter/edge-tiling false
+gsettings set org.gnome.shell.overrides edge-tiling false
+dconf write /org/gnome/desktop/wm/preferences/action-middle-click-titlebar "'lower'"
+
+gsettings set org.gnome.settings-daemon.plugins.media-keys magnifier ''                                                                                              
+gsettings set org.gnome.settings-daemon.plugins.media-keys magnifier-zoom-in ''                                                                                      
+gsettings set org.gnome.settings-daemon.plugins.media-keys magnifier-zoom-out ''                                                                                     
+gsettings set org.gnome.settings-daemon.plugins.media-keys screenreader ''                                                                                           
+gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver '<Super>l'
+
+# fix right click on touchpads
+gsettings set org.gnome.desktop.peripherals.touchpad click-method areas
+
+# enable fractional scaling
+#
+# http://ubuntuhandbook.org/index.php/2019/10/how-to-enable-fractional-scaling-in-ubuntu-19-10-eoan/
+gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling']"
+
+# stop ctrl-; and ctrl-. from binding to the emoji picker
+#
+# Accidentally hitting these has left me with a broken system too many times, especially terminals.
+#
+# See https://unix.stackexchange.com/a/694244
+gsettings set org.freedesktop.ibus.panel.emoji hotkey "[]"
